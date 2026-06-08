@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">우버 콜 수락기</string>
+    <string name="accessibility_description">볼륨UP 버튼으로 우버 콜을 자동 수락합니다</string>
+</resources>

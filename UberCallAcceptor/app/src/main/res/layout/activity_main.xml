@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#1A1A2E">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚖 콜 수락기"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvServiceStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● 서비스 꺼짐"
+        android:textSize="14sp"
+        android:textColor="#FF5555"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 좌표 설정 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 수락 버튼 좌표 설정"
+        android:textSize="15sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X 좌표: "
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/etX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="540"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444466"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y 좌표: "
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/etY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="2100"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444466"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="💾 좌표 저장"
+        android:textSize="15sp"
+        android:backgroundTint="#444466"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="🧪 지금 탭 테스트"
+        android:textSize="15sp"
+        android:backgroundTint="#00D4AA"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAccessibility"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="⚙️ 접근성 서비스 설정"
+        android:textSize="15sp"
+        android:backgroundTint="#333355"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="볼륨UP 버튼 → 저장된 좌표 자동 탭\n볼륨은 원래대로 복원됩니다"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:gravity="center"/>
+
+</LinearLayout>
